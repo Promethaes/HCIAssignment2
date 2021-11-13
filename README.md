@@ -38,13 +38,13 @@ Due: November 12, 2021, 11:59pm (Late penalty 20% per day)
 
     At the same time, the participants did the same tasks in both groups.
 
-    a) Run the assumptions tests that apply, to make sure the data would work with this type of ANOVA. If there are any violations, acknowledge them and state that the reliability of this test will be reduced.
-    b) Run the mixed ANOVA using ezANOVA as follows:
+    1) Run the assumptions tests that apply, to make sure the data would work with this type of ANOVA. If there are any violations, acknowledge them and state that the reliability of this test will be reduced.
+    2) Run the mixed ANOVA using ezANOVA as follows:
 
         ```r
         M_AnovaModel <- ezANOVA(data = SUS, dv = .(Score), wid = .(Participants), within = .(Tool), between =.(Order), detailed = T, type = 3)
         ```
 
-    c) Draw the interaction plot(s).
-    d) Write the report that includes the results of this ANOVA, pairwise post-hoc tests, and the interaction plot(s).
-    e) Do you think the order effect matters in this study? Explain what you would have done to avoid this effect (regardless whether you think it matters or not).
+    3) Draw the interaction plot(s).
+    4) Write the report that includes the results of this ANOVA, pairwise post-hoc tests, and the interaction plot(s).
+    5) Do you think the order effect matters in this study? Explain what you would have done to avoid this effect (regardless whether you think it matters or not).
